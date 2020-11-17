@@ -2,22 +2,15 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
-			"style": {
-			}
+			"style": {}
 		}, {
-			"path": "pages/cart/cart",
-			"style": {
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/member/member",
+			"path": "pages/singers/singers",
 			"style": {
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/news/news",
+			"path": "pages/ranking/ranking",
 			"style": {
 				"enablePullDownRefresh": false
 			}
@@ -26,35 +19,29 @@
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "uni商城",
+		"navigationBarTitleText": "uni音乐",
 		"navigationBarBackgroundColor": "#B50E03"
 	},
 	"tabBar": {
-		"selectedColor":"#B50E03",
+		"selectedColor": "#B50E03",
 		"color": "#CCCCCC",
 		"list": [{
-				"text": "首页",
+				"text": "推荐",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/icon/home.png",
 				"selectedIconPath": "static/icon/home-active.png"
 			},
 			{
-				"text": "新闻",
-				"pagePath": "pages/news/news",
+				"text": "歌手",
+				"pagePath": "pages/singers/singers",
 				"iconPath": "static/icon/news.png",
 				"selectedIconPath": "static/icon/news-active.png"
 			},
 			{
-				"text": "购物车",
-				"pagePath": "pages/cart/cart",
+				"text": "排行版",
+				"pagePath": "pages/ranking/ranking",
 				"iconPath": "static/icon/cart.png",
 				"selectedIconPath": "static/icon/cart-active.png"
-			},
-			{
-				"text": "会员",
-				"pagePath": "pages/member/member",
-				"iconPath": "static/icon/member.png",
-				"selectedIconPath": "static/icon/news-active.png"
 			}
 		]
 	}

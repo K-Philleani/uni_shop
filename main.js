@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App'
+import requestApi from './request/request.js'
 
 Vue.config.productionTip = false
+Vue.prototype.$requestApi = requestApi
 
 App.mpType = 'app'
 
